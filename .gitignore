@@ -7,7 +7,11 @@ public/*/
 # Fichiers système inutiles
 .DS_Store
 node_modules
-/dist
+# /dist
+/dist/models
+/dist/videos
+/dist/img
+/dist/fonts
 
 # Fichiers d'environnement locaux
 .env.local
