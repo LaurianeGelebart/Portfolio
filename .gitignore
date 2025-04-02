@@ -1,0 +1,29 @@
+# Ignorer tous les dossiers dans public/
+public/*/
+
+# Autoriser les fichiers à la racine de public/
+!public/*.*
+
+# Fichiers système inutiles
+.DS_Store
+node_modules
+/dist
+
+# Fichiers d'environnement locaux
+.env.local
+.env.*.local
+
+# Fichiers de logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dossiers et fichiers spécifiques aux éditeurs
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

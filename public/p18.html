@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Inspired P-18 Random Walk" content="P-18 inspired work created by Lauriane Gélébart and Theo Couard" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+    <title>Inspired P-18 Random Walk</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="trait_gauche"></div>
+            <h1>RECODING <br>P-18 RANDOM WALK MANFRED MOHR</h1>
+            <div class="trait_dessus"></div>
+            <div class="trait_dessous"></div>
+            <h2>COUARD Théo - GÉLÉBART Lauriane</h2>
+            <input type="button" onClick="window.location.reload();" value="Refresh">
+        </section>
+
+        <section class="P5square">
+            <iframe src="https://editor.p5js.org/TheoCrd/full/dNBToITPR" height="742" width="700"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projet IMAC - Mars 2022</p>
+    </footer>
+</body>
+</html>
+
+<style>
+    body{
+        background-color: #EFE6DE;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Barlow', sans-serif;
+        color: black;
+    }
+    main{
+        height: 95vh;
+        display: flex;
+        flex-direction: row;
+    }
+    section{
+        width: 50%;
+        position: relative;
+    }
+    .P5square{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        display: flex;
+        width: 100%;
+        height: 5vh;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+    h1{
+        font-size: 3vw;
+        width: 60%;
+        margin: 15% 10% 5% 10%;
+        position: absolute;
+    }
+    h2{
+        font-size: 1.25vw;
+        width: 50%;
+        margin: 47% 10% 5% 10%;
+        position: absolute; 
+    }
+    input{
+        cursor: pointer;
+        height: auto;
+        padding: 2% 0 2% 0;
+        width: 35%;
+        background: #EFE6DE;
+        border: black solid 2px;
+        font-size: 1.5vw;
+        font-weight: bold;
+        font-family: 'Barlow', sans-serif;
+        margin: 65% 10% 0 40%;
+        position: absolute;
+        transition: 0.2s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+    input:hover{
+        transform: scale(105%);
+    }
+    .trait_dessus{
+        margin-top: 40%;
+        border-top: 2px solid #000;
+        width : 700px;
+        position: absolute;
+    }
+    .trait_dessous{
+        margin-top: 42%;
+        border-top: 2px solid #000;
+        width : 550px;
+        position: absolute;
+    }
+    .trait_gauche{
+        border-left: 2px solid #000;
+        height: 550px;
+        margin-left: 5%;
+        position: absolute;
+    }
+</style>
