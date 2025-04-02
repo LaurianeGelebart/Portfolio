@@ -31,7 +31,7 @@ export default {
     return {
       scrollLocked: false,
       isLaptop: false,
-      user3D: true,
+      user3D: false,
     }
   },
   methods: {

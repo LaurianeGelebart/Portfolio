@@ -15,7 +15,7 @@ import {
 } from "@/three/eventHandlers";
 
 export default {
-  name: "Interface3D",
+  name: "Header3DInterface",
 
   data() {
     return {

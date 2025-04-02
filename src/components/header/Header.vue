@@ -1,20 +1,19 @@
 <template>
   <header>
     <Header2DInterface v-if="!user3D" />
-    <Interface3D v-if="isLaptop && user3D"/>
+    <Header3DInterface v-if="isLaptop && user3D"/>
   </header>
 </template>
 
 <script>
 import Header2DInterface from "@/components/header/2DInterface.vue";
-import Interface3D from '@/components/header/Interface3D.vue';
+import Header3DInterface from '@/components/header/3DInterface.vue';
 
 export default {
   name: "HeaderPage",
   components: { 
-    // Header3DInterface, 
     Header2DInterface, 
-    Interface3D,
+    Header3DInterface,
   },
   props: {
     user3D: { type: Boolean, required: true, default: false },
@@ -26,23 +25,12 @@ export default {
   },
   methods: {},
   beforeMount() {
-    // console.log(this.user3D)
   },
 };
 </script>
 
 
 <style scoped>
-/* header {
-  color: var(--background-color-primary);
-  position: relative;
-  display: flex !important;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 4rem;
-} */
-
-
 
 @media screen and (max-width: 1024px) {
 }
